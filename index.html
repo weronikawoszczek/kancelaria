@@ -24,7 +24,7 @@
 
                 <div
                 class="headerMenu"> <a href="#kontakt" class="nav-el">Kontakt</a>
- <a href="./dojazd.html" class="nav-el">Dojazd i parking</a>
+ <a href="#dojazd" class="nav-el">Dojazd i parking</a>
 
                     <a
                     href="./czynnosci.html" class="nav-el">Czynności notarialne</a>
@@ -39,10 +39,10 @@
         </div>
         <div class="topMenu">
             <ul>
-                <li><a href="./kontakt.html" class="nav-el">Kontakt</a>
+                <li><a href="#kontakt" class="nav-el">Kontakt</a>
 
                 </li>
-                <li><a href="./dojazd.html" class="nav-el">Dojazd i parking</a>
+                <li><a href="#dojazd" class="nav-el">Dojazd i parking</a>
 
                 </li>
                 <li><a href="./czynnosci.html" class="nav-el">Czynności notarialne</a>
@@ -59,11 +59,12 @@
             i sumieniem, dochowując tajemnicy państwowej i zawodowej, w postępowaniu
             swym kieruję się zasadami godności, honoru i uczciwości."</h4>
 
-            </div>
-            <section id="kontakt" class="contact"> <a href="#kontakt" class="btn-class absolute">Napisz do kancelarii
+                <div id="kontakt"></div> <a href="#kontakt" class="btn-class absolute">Napisz do kancelarii
             <div class="arrow"></div>
         </a>
 
+            </div>
+            <section class="contact">
                 <div class="workspace">
                     <div class="workspace__block"> <span class="contact-span smaller">
                     Kancelaria Notarialna Grad Notariusze sp. p.
@@ -86,14 +87,61 @@
                     mBank S.A.
                 </span>
  <span class="contact-span smaller languages">
-<!--                    <i class="fas fa-globe-europe"></i>-->
-                    <span class="first-lan">We speak English</span>
+                    <span class="first-el">We speak English</span>
 Wir
-                        sprechen Deutsch</span>
+                        sprechen Deutsch</span> <a href="#dojazd" class="btn-class absolute high">Sprawdź dojazd
+                    <div class="arrow"></div>
+                </a>
+
                     </div>
-                    <div class="workspace__block"></div>
+                    <div class="workspace__block">
+                        <div class="form-wrapper contact-form">
+                            <!-- <h3>Napisz do nas</h3>-->
+                            <form method="post" action="contact-form.php">
+                                <div class="form-group">
+                                    <label for="Name" class="">Imię i nazwisko</label>
+                                    <div class="input-group">
+                                        <input type="text" id="Name" name="Name" class="form-input" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email" class="">E-mail</label>
+                                    <div class="input-group">
+                                        <input type="email" id="Email" name="Email" class="form-input" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email" class="">Czynność</label>
+                                    <div class="input-group">
+                                        <input type="email" id="Czynnosc" name="Czynnosc" class="form-input" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Message" class="">Wiadomość</label>
+                                    <div class="input-group">
+                                        <textarea id="Message" name="Message" class="form-input" rows="2" maxlength="5000"
+                                        required></textarea>
+                                    </div>
+                                </div>
+                                <div class="input-group with-icon">
+                                    <input class="checkbox-input" type="checkbox" id="Zgoda" value="Tak">
+                                    <label for="Zgoda">
+                                        </i>Zgoda</label>
+                                </div>
+                                <!-- Administratorem danych osobowych jest Kancelaria Notarialna Grad
+                                Notariusze, z siedzibą w Tomaszowie Mazowieckim. Podane dane osobowe zbierane
+                                są w celu informacyjnym i nie będą udostępniane innym odbiorcom. Mają Państwo
+                                prawo dostępu do treści swoich danych oraz ich poprawiania. Podanie danych
+                                osobowych jest dobrowolne.-->
+                                <div class="form-group">
+                                    <button type="submit" class="btn-class">Wyślij</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
+            <section id="dojazd" class="dojazd"></section>
         </div>
         <script src="https://kit.fontawesome.com/42fde91619.js" crossorigin="anonymous"></script>
         <script src="./dist/assets/js/libs/jquery.js"></script>
