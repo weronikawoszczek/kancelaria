@@ -55,18 +55,19 @@
         </div>
         <div class="page-limiter" id="start">
             <div class="photo-wrapper">
-                 <h4 class="main-text">"Jako notariusz powierzone mi obowiązki wypełniam zgodnie z prawem
-            i sumieniem, dochowując tajemnicy państwowej i zawodowej, w postępowaniu
-            swym kieruję się zasadami godności, honoru i uczciwości."</h4>
+                <div class="main" id="main">
+                     <h4 class="main-text">"Jako notariusz powierzone mi obowiązki wypełniam zgodnie z prawem
+                i sumieniem, dochowując tajemnicy państwowej i zawodowej, w postępowaniu
+                swym kieruję się zasadami godności, honoru i uczciwości."</h4>
 
-                <div id="kontakt"></div> <a href="#kontakt" class="btn-class absolute">Napisz do kancelarii
-            <div class="arrow"></div>
-        </a>
+                    <div id="kontakt"></div> <a href="#kontakt" class="btn-class absolute kontakt">Napisz do kancelarii
+                <div class="arrow"></div>
+            </a>
 
-            </div>
-            <section class="contact">
-                <div class="workspace">
-                    <div class="workspace__block"> <span class="contact-span smaller">
+                </div>
+                <section class="contact">
+                    <div class="workspace">
+                        <div class="workspace__block"> <span class="contact-span smaller">
                     Kancelaria Notarialna Grad Notariusze sp. p.
                 </span>
  <span class="contact-span smaller">
@@ -74,7 +75,7 @@
                         97-200 Tomaszów Mazowiecki
                 </span>
 
-                        <div class="contact-data"> <span class="contact-span bigger">
+                            <div class="contact-data"> <span class="contact-span bigger">
                     <a href="tel:447244454">tel. 44 724-44-54</a><br>
                     <a href="tel:+48725181000">tel. kom. 725-181-000</a>
                 </span>
@@ -82,66 +83,81 @@
                     <a href="mailto:biuro@notariuszgrad.pl">biuro@notariuszgrad.pl</a>
                 </span>
 
-                        </div> <span class="contact-span smaller">
+                            </div> <span class="contact-span smaller">
                     Nr konta: XXXX XXXX XXXX XXXX <br>
                     mBank S.A.
                 </span>
  <span class="contact-span smaller languages">
                     <span class="first-el">We speak English</span>
 Wir
-                        sprechen Deutsch</span> <a href="#dojazd" class="btn-class absolute high">Sprawdź dojazd
-                    <div class="arrow"></div>
-                </a>
+                            sprechen Deutsch</span>
+                            <!-- <a href="#dojazd" class="btn-class absolute
+                            high">Sprawdź dojazd-->
+                            <!-- <div class="arrow"></div>-->
+                            <!-- </a>-->
+                        </div>
+                        <div class="workspace__block">
+                            <div class="form-wrapper contact-form">
+                                 <h3>Skontaktuj się przez formularz</h3>
 
-                    </div>
-                    <div class="workspace__block">
-                        <div class="form-wrapper contact-form">
-                            <!-- <h3>Napisz do nas</h3>-->
-                            <form method="post" action="contact-form.php">
-                                <div class="form-group">
-                                    <label for="Name" class="">Imię i nazwisko</label>
-                                    <div class="input-group">
-                                        <input type="text" id="Name" name="Name" class="form-input" required>
+                                <form method="post" action="contact-form.php">
+                                    <div class="form-group">
+                                        <label for="Name" class="">Imię i nazwisko</label>
+                                        <div class="input-group">
+                                            <input type="text" id="Name" name="Name" class="form-input" required>
+                                            <div class="border-bottom-hover"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Email" class="">E-mail</label>
-                                    <div class="input-group">
-                                        <input type="email" id="Email" name="Email" class="form-input" required>
+                                    <div class="form-group">
+                                        <label for="Email" class="">E-mail</label>
+                                        <div class="input-group">
+                                            <input type="email" id="Email" name="Email" class="form-input" required>
+                                            <div class="border-bottom-hover"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Email" class="">Czynność</label>
-                                    <div class="input-group">
-                                        <input type="email" id="Czynnosc" name="Czynnosc" class="form-input" required>
+                                    <div class="form-group">
+                                        <label for="Email" class="">Czynność</label>
+                                        <div class="input-group">
+                                            <input type="email" id="Czynnosc" name="Czynnosc" class="form-input" required>
+                                            <div class="border-bottom-hover"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Message" class="">Wiadomość</label>
-                                    <div class="input-group">
-                                        <textarea id="Message" name="Message" class="form-input" rows="2" maxlength="5000"
-                                        required></textarea>
+                                    <div class="form-group">
+                                        <label for="Message" class="">Wiadomość</label>
+                                        <div class="input-group">
+                                            <textarea id="Message" name="Message" class="form-input" rows="2" maxlength="5000"
+                                            required></textarea>
+                                            <div class="border-bottom-hover"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="input-group with-icon">
-                                    <input class="checkbox-input" type="checkbox" id="Zgoda" value="Tak">
-                                    <label for="Zgoda">
-                                        </i>Zgoda</label>
-                                </div>
-                                <!-- Administratorem danych osobowych jest Kancelaria Notarialna Grad
-                                Notariusze, z siedzibą w Tomaszowie Mazowieckim. Podane dane osobowe zbierane
-                                są w celu informacyjnym i nie będą udostępniane innym odbiorcom. Mają Państwo
-                                prawo dostępu do treści swoich danych oraz ich poprawiania. Podanie danych
-                                osobowych jest dobrowolne.-->
-                                <div class="form-group">
-                                    <button type="submit" class="btn-class">Wyślij</button>
-                                </div>
-                            </form>
+                                    <div class="input-group with-icon">
+                                        <input class="checkbox-input" type="checkbox" id="Zgoda" value="Tak">
+                                        <label for="Zgoda">
+                                            </i>Zgoda</label>
+                                    </div>
+                                    <!-- Administratorem danych osobowych jest Kancelaria Notarialna Grad
+                                    Notariusze, z siedzibą w Tomaszowie Mazowieckim. Podane dane osobowe zbierane
+                                    są w celu informacyjnym i nie będą udostępniane innym odbiorcom. Mają Państwo
+                                    prawo dostępu do treści swoich danych oraz ich poprawiania. Podanie danych
+                                    osobowych jest dobrowolne.-->
+                                    <div class="form-group">
+                                        <button type="submit" class="btn-class right">Wyślij</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section> <a href="#dojazd" class="btn-class absolute tolast">Sprawdź dojazd
+            <div class="arrow"></div>
+        </a>
+ <a href="#main" class="btn-class absolute tofirst">Wróć do początku
+            <div class="arrow-up"></div>
+        </a>
+
+            </div>
+            <section id="dojazd" class="dojazd">
+                <footer></footer>
             </section>
-            <section id="dojazd" class="dojazd"></section>
         </div>
         <script src="https://kit.fontawesome.com/42fde91619.js" crossorigin="anonymous"></script>
         <script src="./dist/assets/js/libs/jquery.js"></script>
